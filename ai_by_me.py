@@ -104,3 +104,18 @@ while True:
     halcyon.speak(response)
     time.sleep(1)
 
+from flask import Flask, request, jsonify
+
+web_app = Flask(__name__)
+
+@web_app.route("/")
+def status():
+    return jsonify({"status": "🟢 Halcyon is operational."})
+
+@web_app.route("/interact", methods=["POST"])
+def interact():
+    data = request.json
+    user_input = data.get("input", "")
+    response = halcyon.generate_response(user_input)
+    halcyon.save_memory(user_input, response)
+    return jsonify({"response": response})
