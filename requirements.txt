@@ -1,9 +1,6 @@
 flask
-flask-cors
 torch
 transformers
-sounddevice
-pyttsx3
 openai
 tiktoken
 faiss-cpu
