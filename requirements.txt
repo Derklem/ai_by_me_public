@@ -1,0 +1,11 @@
+flask
+flask-cors
+torch
+transformers
+sounddevice
+pyaudio
+pyttsx3
+openai
+tiktoken
+faiss-cpu
+numpy
