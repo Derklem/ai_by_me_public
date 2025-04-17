@@ -41,3 +41,8 @@ def interact():
     ai_response = generate_response(user_input)
     save_memory(user_input, ai_response)
     return jsonify({"response": ai_response})
+
+# 🔥 Port binding for Render
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Use Render's assigned port or default to 10000
+    app.run(host="0.0.0.0", port=port)
