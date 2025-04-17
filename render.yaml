@@ -3,5 +3,5 @@ services:
     name: ai-by-me
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn web_api:ai_by_me
+    startCommand: python web_api.py
     autoDeploy: true
