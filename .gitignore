@@ -1,6 +1,20 @@
-﻿.venv/
+@"
+.venv/
 *.pyc
 __pycache__/
 halcyon_memory.json
 memory.json
 memory.txt
+(c)
+2
+7
+cd
+dir
+Directory
+File
+Microsoft
+Volume
+import
+package-lock.json
+python
+"@ | Out-File -FilePath ".gitignore" -Encoding utf8
