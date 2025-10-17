@@ -1,0 +1,6 @@
+﻿.venv/
+*.pyc
+__pycache__/
+halcyon_memory.json
+memory.json
+memory.txt

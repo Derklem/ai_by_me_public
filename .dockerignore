@@ -1,0 +1,9 @@
+.venv
+__pycache__/
+.git
+.gitignore
+logs/
+*.zip
+*.tar
+*.tar.gz
+.DS_Store

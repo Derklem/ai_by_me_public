@@ -1,0 +1,7 @@
+flask
+transformers
+openai
+tiktoken
+faiss-cpu
+numpy
+gunicorn
